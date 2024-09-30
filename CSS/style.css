@@ -1,0 +1,406 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: #333;
+    font-family: Roboto, Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Noto Sans CJK", sans-serif;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none; 
+    color: #333;
+}
+#main {
+    width: 800px;           
+    margin: 5px auto;      
+    padding: 5px;       
+    font-family: Arial, sans-serif; 
+    position: relative;
+    right: 0;
+    transition: right .3s;
+}
+/* index页面 */
+#header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    margin: 0 auto;
+}
+#head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+#avatar {
+    width: 5.5rem; 
+    height: 5.5rem; 
+    border-radius: 50%; 
+    background-color: #fff;
+    margin: 10px auto;
+    transition: transform 0.6s ease , box-shadow 0.3s ease;
+    transform: rotate(0deg);
+
+}
+#avatar:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px #f4a7b9; 
+
+}
+.description {
+    font-size: 1rem; 
+    color: #e87a90; 
+    margin: 0.2rem 0;
+}
+
+ul.icons {
+	display: flex;
+	gap: 1rem;
+	margin: 0rem auto;
+    padding: 0rem;
+}
+ul.icons li img {
+    width: 36px; /* 设置宽度 */
+    height: auto; 
+}
+#nav-menu {
+    margin: 1rem 0;
+}
+#nav-menu a {
+    color: #f4a7b9;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: auto 0.5rem;
+    font-weight: 600;
+    border: 2px solid #f4a7b9;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 0px #e87a90, 2px 2px #e87a90;
+}
+#nav-menu a:hover {
+    color: #fff;
+    background: #f4a7b9;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 0px 0px #fff, 2px 2px #fff;
+
+}
+.post {
+    width: 90%;
+    margin: 1.25rem auto;
+    box-sizing: border-box;
+    padding: 0.5rem 0;
+}
+.post-content {
+	margin: 10px 0px;
+    font-size: 1rem;
+    border-bottom: 2px dashed #0000001c;
+}
+h2  {
+    margin: 0px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 1.25rem;
+
+}
+h2.post-title a 
+{
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: color 0.15s ease; 
+}
+h2.post-title a:hover
+{
+
+    color:#f4a7b9;
+}
+h2.post-title li {
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin: 0.5rem 0 0 0;
+}
+
+/* footer页面 */
+#footer {
+    width: 100%;
+    margin: 5px 0 0 0;
+    text-align: center;
+    color: #fedfe1
+}
+#footer a
+{
+    color: #fedfe1
+}
+.page-navigator {
+    display: flex; 
+    justify-content: center;
+    
+}
+.page-navigator .current{
+    border-bottom: 2px solid #f4a7b9;
+}
+.page-navigator li
+{
+    color: #f8c3cd;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: auto 5px;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0s ease; 
+}
+.page-navigator li a {
+    color: #f8c3cd;
+
+}
+.page-navigator li:hover {
+	border-bottom: 2px solid #f4a7b9;
+
+}
+
+/* post页面 */
+h1.post-title  {
+	text-align: center;
+    padding: 0.5rem;
+    border-bottom: 2px dashed #0000001c;
+
+}
+h1.post-title a{
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+h1.post-title li{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.8rem 0;
+}
+h1.post-title li a{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.8rem 0;
+}
+.post-content p img {
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+}
+ul.post-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.post-near {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+}
+.post-near li{
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0s ease; 
+}
+.post-near li:hover
+{
+    border-bottom: 2px solid #f4a7b9;
+}
+
+/* 自适应分辨率 */
+
+
+@media (max-width: 767px) {
+    #main {
+        width: 100%;
+        padding: 0px;
+        right: auto;
+        font-size: 16px;
+        margin: 0px;
+    }
+    #nav-menu a {
+        color: #f4a7b9;
+        font-size: 1.25rem;
+        padding: 0.4rem 0.8rem;
+        cursor: pointer;
+        margin: auto 0.5rem;
+        font-weight: 600;
+    } 
+
+    .container {
+        width: 100%;
+        margin: 1rem auto;
+
+    }
+    #avatar {
+        width: 4.5rem; 
+        height: 4.5rem; 
+        border-radius: 50%; 
+        background-color: #fff;
+        margin: 0.5rem auto;
+        transition: transform 0.6s ease , box-shadow 0.3s ease;
+        transform: rotate(0deg);
+    
+    }
+    h1.post-title a{
+        font-size: 1.25rem;
+        font-weight: 400;
+    
+    }
+    h1.post-title li {
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 0.8rem 0;
+    }
+    h2 {
+        margin: 0px;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        font-size: 1rem;
+        padding: 0 1.75rem;
+    }
+    .post {
+        width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .post-content {
+        font-size: 1rem;
+        margin: 10px 0px;
+    }
+    #player {
+        background: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 80%;
+        overflow: hidden;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height: normal;
+        position: relative;
+    }
+}
+
+
+
+/* 关于页面 */
+#robot {
+width: 70%;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+margin: 0 auto;
+}
+
+#messages-box {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+}
+
+.message {
+    margin-bottom: 0.5rem;
+    display: flex;
+    
+}
+.message.user {
+    align-self: flex-end;
+}
+.message.bot .text {
+    background-color: #fedfe1;
+	color: #e87a90;
+	border: 1px solid #e87a90;
+	font-weight: 400;
+	border-radius: 4px;
+	padding: 0.3rem 0.3rem;
+	max-width: 70%;
+	font-size: 1rem;
+    box-shadow: 0px 0px 0px 0px #e87a90, 2px 2px #e87a90;
+}
+.message.user .text {
+    background-color: #00b7ff1f;
+	color: #00b7ff;
+	border: 1px solid #00b7ff;
+	font-weight: 400;
+	border-radius: 4px;
+	padding: 0.3rem 0.3rem;
+	font-size: 1rem;
+    box-shadow: 0px 0px 0px 0px #00b7ff, 2px 2px #00b7ff;
+
+}
+
+#options{
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.action-button {
+	padding: 0.3rem 0.3rem;
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 400;
+	border: 2px solid #333;
+	border-radius: 4px;
+    box-shadow: 0 0 0 0 #444444, 2px 2px #444444;
+    margin: 3px 0;
+}
+
+.action-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    
+        #robot {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 0 auto;
+        }
+}
+
+
+@keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+    .message {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .action-button {
+        animation: fadeIn 0.3s ease-in-out; 
+    }
+
