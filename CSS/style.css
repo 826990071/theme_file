@@ -131,6 +131,16 @@ h2.post-title li {
     font-weight: 400;
     margin: 0.5rem 0 0 0;
 }
+span.heimu {
+    transition: color 0.13s linear;
+    background-color: #252525;
+    text-shadow: none;
+    
+}
+
+span.heimu:hover{
+    color: #fff;
+}
 
 /* footer页面 */
 #footer {
