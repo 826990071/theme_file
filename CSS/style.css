@@ -203,7 +203,8 @@ h1.post-title li a{
 }
 .post-content p img {
     display: block;
-    width: 80%;
+    width: 70%;
+    height: auto;
     margin: 1rem auto;
 }
 ul.post-meta {
