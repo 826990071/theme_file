@@ -128,7 +128,7 @@ h2.post-title li {
     font-size: 0.8rem;
     font-family: sans-serif;
     font-weight: 400;
-    margin: 0;
+    margin: 0.1rem 0 0 0;
 }
 span.heimu {
     transition: color 0.13s linear;
@@ -301,6 +301,7 @@ blockquote {
         width: 90%;
         margin: 0 auto;
         box-sizing: border-box;
+        text-wrap: nowrap;
     }
     .post-content {
         font-size: 1rem;
