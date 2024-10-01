@@ -119,17 +119,17 @@ h2.post-title a
     font-size: 1.25rem;
     font-weight: 600;
     transition: color 0.13s ease; 
+    text-wrap: nowrap;
 }
 h2.post-title a:hover
 {
-
     color:#f4a7b9;
 }
 h2.post-title li {
     font-size: 0.8rem;
     font-family: sans-serif;
     font-weight: 400;
-    margin: 0.5rem 0 0 0;
+    margin: 0;
 }
 span.heimu {
     transition: color 0.13s linear;
@@ -290,7 +290,7 @@ blockquote {
         margin: 0.8rem 0;
     }
     h2 {
-        margin: 0px;
+        margin: 1rem 0 0 0;
         font-weight: bold;
         overflow: hidden;
         text-overflow: ellipsis;
