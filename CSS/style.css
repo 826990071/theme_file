@@ -106,7 +106,6 @@ ul.icons li img {
 }
 h2  {
     margin: 0px;
-    font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -291,7 +290,6 @@ blockquote {
     }
     h2 {
         margin: 1rem 0 0 0;
-        font-weight: bold;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
