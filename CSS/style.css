@@ -105,7 +105,7 @@ ul.icons li img {
     border-bottom: 2px dashed #0000001c;
 }
 h2  {
-    margin: 0px;
+    margin: 0px 10rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
