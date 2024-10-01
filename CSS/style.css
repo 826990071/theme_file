@@ -229,7 +229,8 @@ ul.post-meta {
 {
     border-bottom: 2px solid #f4a7b9;
 }
-/* 文章书写 */
+
+/*Markdown界面*/
 blockquote {
     margin: 1rem 0;
     padding-left: 1.5rem;
@@ -237,7 +238,7 @@ blockquote {
     color: #666;
   }
 
-  .post-content hr, .comment-content hr {
+.post-content hr{
 	margin: 2rem auto;
 	width: 50%;
 	border: 1px solid #E9E9E9;
@@ -246,8 +247,6 @@ blockquote {
 
 
 /* 自适应分辨率 */
-
-
 @media (max-width: 767px) {
     #main {
         width: 100%;
