@@ -117,8 +117,8 @@ h2  {
 h2.post-title a 
 {
     font-size: 1.25rem;
-    font-weight: 400;
-    transition: color 0.15s ease; 
+    font-weight: 600;
+    transition: color 0.13s ease; 
 }
 h2.post-title a:hover
 {
