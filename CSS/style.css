@@ -229,6 +229,21 @@ ul.post-meta {
 {
     border-bottom: 2px solid #f4a7b9;
 }
+/* 文章书写 */
+blockquote {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    border-left: 4px solid #eee;
+    color: #666;
+  }
+
+  .post-content hr, .comment-content hr {
+	margin: 2rem auto;
+	width: 50%;
+	border: 1px solid #E9E9E9;
+	border-width: 2px 0 0 0;
+}
+
 
 /* 自适应分辨率 */
 
